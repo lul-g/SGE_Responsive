@@ -263,3 +263,30 @@ header nav .pad {
 .teams .txt-bottom .box .profile img {
     border-radius: 50%;
 }
+.contact {
+    border-bottom: white 2px solid;
+    background-color: var(--main-bg-color);
+    z-index: 1;
+    justify-content: center;
+}
+.contact .not-form > .box:nth-child(2){
+    padding: 1.8rem; 
+    color: #3d0365;
+    border-radius: 10px;
+    border-bottom: 9px #bf5ef9 solid;
+}
+.contact .not-form > .box:nth-child(3){
+    padding: 1.8rem; 
+    color: #3d0365;
+    border-radius: 10px;
+    border-bottom: 9px #fc573b solid;
+}
+.contact .not-form > .box:nth-child(2) i{
+    color: #bf5ef9;
+}
+.contact .not-form > .box:nth-child(3) i{
+    color: #fc573b;
+}
+.contact .not-form p{
+    color: var(--p-color);
+}

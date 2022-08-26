@@ -111,7 +111,7 @@
         position: relative;
     }
     .services .grid .col {
-        margin: 0 0 2rem 0;
+        margin: 0 0 4rem 0;
     }
     .services .grid .col i {
         position: absolute;
@@ -244,55 +244,52 @@
 /* about end */
 
 /* teams start */
-.teams {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    --gap: 0;
-}
-.teams .txt-top {
-    margin: 2rem 2rem;
-}
-.teams .txt-top h1 {
-    text-align: center;
-    letter-spacing: .5px;
-}
-.teams .txt-top p {
-    margin: 1.5rem 0;
-}
-.teams .txt-bottom {
-    margin: 2rem 2rem;
-}
-.teams .txt-bottom .box {
-    margin-top: 3rem;
-}
-.teams .txt-bottom .box img{
-    position: relative;
-    top: 2rem;
-}
-.teams .txt-bottom .box .profile {
-    margin-bottom: 2rem;
-}
-.teams .txt-bottom .box .profile img {
-    border-radius: 50%;
-    width: 20vw;
-}
-.teams .txt-bottom .box .profile .txt{
-    position: relative;
-    top: clamp(1.7rem, 10vw,5rem);
-    left: 1rem;
-}
-.teams .btn-0, .btn, .btn-1 {
-    padding: 10px 0;
-    width: 170px;
-}
-.teams .txt-bottom {
-
-}
+    .teams {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        --gap: 0;
+    }
+    .teams .txt-top {
+        margin: 4rem 2rem 0rem 2rem;
+    }
+    .teams .txt-top h1 {
+        text-align: center;
+        letter-spacing: .5px;
+    }
+    .teams .txt-top p {
+        margin: 1.5rem 0;
+    }
+    .teams .txt-bottom {
+        margin: 2rem 2rem 3rem 2rem;
+    }
+    .teams .txt-bottom .box {
+        margin-top: 3rem;
+    }
+    .teams .txt-bottom .box img{
+        position: relative;
+        top: 2rem;
+    }
+    .teams .txt-bottom .box .profile {
+        margin-bottom: 2rem;
+    }
+    .teams .txt-bottom .box .profile img {
+        border-radius: 50%;
+        width: 20vw;
+    }
+    .teams .txt-bottom .box .profile .txt{
+        position: relative;
+        top: clamp(1.7rem, 10vw,5rem);
+        left: 1rem;
+    }
+    .teams .btn-0, .btn, .btn-1 {
+        padding: 10px 0;
+        width: 170px;
+    }
 /* teams end */
 }
 
-
+/* special-teams-profile-img */
 @media (max-width: 380px) {
     .teams .txt-bottom .box .profile {
         flex-direction: column;
@@ -304,3 +301,58 @@
         inset: 0;
     }
 }
+
+/* contact us start */
+.contact {
+    flex-direction: column;
+    --gap: 0;
+}
+.contact .not-form {
+    margin: 2rem 1rem 1rem 1rem;
+}
+.contact .not-form .txt-div {
+    text-align: center;
+}
+.contact .not-form .txt-div p{
+    margin-top: 2rem;
+}
+.contact .not-form .box {
+    margin: 2rem clamp(1rem, 4vw, 5rem);
+    flex-direction: column;
+    text-align: center;
+    --gap: 0;
+}
+.contact .not-form .box h3{
+    font-size: clamp(18px, 5vw, 28px);
+}
+.contact .not-form .box i {
+    font-size: 3rem;
+}
+
+.contact .form {
+    flex-direction: column;
+    align-items: center;
+}
+.contact .form .form-group {
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+.contact .form .form-group input, 
+textarea {
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 5px 10px var(--main-bg-color);
+    width: clamp(270px, 80vw, 570px);
+}
+.contact .form .form-group  textarea{
+    padding-bottom: 7rem;
+    text-align: start !important;
+}
+.contact .form .btn-0 {
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+/* contact us end */
