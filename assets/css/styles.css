@@ -1,0 +1,265 @@
+/* Smallest screen view - 320px */
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap');
+
+/* css-reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 500vh;
+    /* max-width: 500px; */
+    /* background: #06052f; */
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+/* gloabl variables */
+:root {
+    --main-bg-color: #06052f;
+    --main-txt-color: #fff; 
+    --p-color: #7a819b;
+    --header_home_height: 5.2rem;
+}
+
+/* common css start*/
+/*common css- txt specific
+ nav-text
+btn-text-thin
+btn-text-bold
+header-thin
+header-bold
+header-2
+p-text-col1
+p-text-col2 */
+
+.nav-txt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+.btn-txt  {
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-txt-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.text {
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-txt-color);
+}
+
+.thin {
+    font-weight: 200;
+}
+.bold {
+    font-weight: 700;
+}
+.header-txt {
+    font-size: clamp(45px, 6vw, 56px);
+    letter-spacing: -2px;
+    line-height: 45px;
+}
+.header-2 {
+    font-size: 30px;
+    letter-spacing: -1.6px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.header-3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.p-txt {
+    font-size: 16px;
+    color: var(--p-color);
+    line-height: 26px;
+}
+.sm {
+    font-size: 15px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* btn glow */
+.btn-0 {
+    background: linear-gradient(45deg, #8340ff 15%, #5900ff 65%);
+    border-radius: 100px;
+    cursor: pointer; 
+    transition: all ease .3s;  
+    text-align: center;
+    /* padding: clamp() clamp(); */
+    
+}
+
+.btn-0:hover {
+    box-shadow: 0 0 10px 2px #5020a8;
+    transform: scale(1.1);
+}
+
+/* btn (transparent to gradient) */
+.btn {
+    position: relative;
+    border: 2px white solid;
+    background: transparent;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    transition:all ease .3s;
+
+}
+.btn-1 {
+    position: absolute;
+    top: -2.5px;
+    left: -1.7px;
+    background: linear-gradient(45deg, #8340ff 15%, #5900ff 65%);
+    border-radius: 100px;
+    opacity: 0;
+    width: calc( 100% + 3px);
+    height: calc( 100% + 2px);
+    transition:all ease .3s;
+    z-index: -1;
+}
+.btn:hover {
+    /* border: none; */
+    transform: scale(1.07);
+    box-shadow: 0 0 10px 2px #5020a8;;
+
+}
+.btn:hover .btn-1 {
+    opacity: 1;
+}
+
+.box {
+    background-color: var(--main-bg-color);
+    box-shadow: 0 0 20px 2px;
+}
+/* common css-general */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.not-header {
+    position: relative;
+    top: 6em;
+    z-index: 8;
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+a {
+    text-decoration: none;
+}
+object {
+    pointer-events: none;
+}
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* common css end */
+
+
+/* bg overlay start*/
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/img/bg/welcome_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    z-index: -1;
+}
+.bg-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: .95;
+    background:  var(--main-bg-color);
+}
+
+/* bg overlay end */
+
+
+/* header start*/
+header {
+    padding: 0 4rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 9;
+    height: 15vh;  
+    transition: ease-in .2s;
+    background-color: transparent;
+}
+header .toggle-nav, 
+header .plane {
+    color: var(--main-txt-color);
+    display: none;
+}
+header .header-logo{
+    margin: 2em 0;
+    transition: all .3s ease-in-out;
+}
+header .header-logo:hover {
+    transform: scale(1.1);
+}
+
+header nav .nav li{
+    display: inline !important;
+}
+header nav .pad {
+    padding-right: 20px;
+}
+/* header end */
+
+.home p {
+    margin: 1.5rem 0;
+}
+
+.services {
+    background-color: var(--main-bg-color);
+    z-index: 1;
+    justify-content: center;
+}
+.about {
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+    background-color: var(--main-bg-color);
+    z-index: 1;
+    justify-content: center;
+}
+
+.teams {
+    border-bottom: white 2px solid;
+    background-color: var(--main-bg-color);
+    z-index: 1;
+    justify-content: center;
+}
+.teams .txt-bottom > .box:first-child{
+    padding: 2rem; 
+    color: #20eb92;
+
+}
+.teams .txt-bottom > .box:nth-child(2){
+    padding: 2rem; 
+    color: #ffd209;
+}
+.teams .txt-bottom > .box:nth-child(3){
+    padding: 2rem; 
+    color: #ff006e;
+}
+.teams .txt-bottom .box .profile img {
+    border-radius: 50%;
+}
