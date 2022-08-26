@@ -1,18 +1,18 @@
-// nav toggle button and outside of nav area
 const nav = document.querySelector(".nav");
 const header = document.querySelector(".header");
 const header_logo = document.querySelector(".header-logo-w");
 const secondary_header = document.querySelector(".secondary-header");
 const nav_txts = document.querySelectorAll('.nav-txt');
-const nav_contact_us = document.querySelector('header nav .btn');
+const nav_contact_us = document.querySelectorAll('header nav .btn');
+// const blog = document.querySelector('header nav .btn-0');
+
 
 const not_headers = document.querySelectorAll('.not-header');
 const nav_toggle = document.querySelector(".toggle-nav");
 const nav_toggle_i = nav_toggle.getElementsByTagName("i")[0];
 const plane = document.querySelector(".plane");
 
-
-// outside of header click
+// nav toggle outside of header click
 not_headers.forEach((not_header) => {
     not_header.addEventListener('click', () => {
         const is_visible = nav.getAttribute("data-visible");    
@@ -54,6 +54,7 @@ nav_toggle.addEventListener('click', () => {
 // hide nav on scroll down, show on scroll up
 var lastTopScroll = 0; 
 window.addEventListener("scroll", () => {
+    const is_visible = nav.getAttribute("data-visible");    
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollTop > lastTopScroll && scrollTop > 50) {
         header.style.top = '-15vh';
@@ -63,7 +64,10 @@ window.addEventListener("scroll", () => {
         header_logo.src = "assets/img/logo/logo.png";
         nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'black'});
         nav.style.background = 'white';
-        nav_contact_us.style.borderColor = 'black';
+        nav_contact_us[0].style.borderColor = 'white';
+        nav_contact_us[1].style.borderColor = 'white';
+
+
     }
     else if (scrollTop === 0) {
         header.style.background="transparent";
@@ -72,7 +76,9 @@ window.addEventListener("scroll", () => {
         header_logo.src = "assets/img/logo/logo-white.png";
         nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'white'});
         nav.style.background = '#06052f';
-        nav_contact_us.style.borderColor = 'white';
+        nav_contact_us[0].style.borderColor = 'white';
+        nav_contact_us[1].style.borderColor = 'white';
+
     }
     else {
         header.style.top = '0';
