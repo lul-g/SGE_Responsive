@@ -88,6 +88,9 @@ p-text-col2 */
 p {
     font-family: 'Roboto', sans-serif;
 }
+.txt-align {
+    text-align: center;
+}
 
 /* btn glow */
 .btn-0 {
@@ -292,4 +295,35 @@ header nav .pad {
 }
 .contact .form .btn-0 {
     border: transparent;
+}
+.footer {
+    background-color: var(--main-bg-color);
+    padding: 2.5rem 0;
+}
+.footer .top{
+    border-bottom: 2px var(--main-txt-color) solid;
+    margin-bottom: 3rem;
+}
+.footer .top .group h1{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+.footer .top .group div ul li {
+    padding-top: 16px;
+}
+
+.footer .top .group div ul li a{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.footer .top .group2 ul li{
+    display: inline;
+    margin: 0 2rem 0 0;
+}
+.footer .top .group2 ul li a i{
+    font-size: 28px;
 }

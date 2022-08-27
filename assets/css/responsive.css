@@ -356,3 +356,13 @@ textarea {
 }
 
 /* contact us end */
+
+/* footer start */
+.footer .top {
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.footer .top .group {
+    flex-direction: column;
+}
+/* footer end */
