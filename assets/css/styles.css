@@ -131,6 +131,16 @@ p {
     transition:all ease .3s;
     z-index: -1;
 }
+.btn-2 {
+    position: absolute;
+    top: -2.5px;
+    left: -1.7px;
+    border-radius: 100px;
+    opacity: 0;
+    width: calc( 100% + 3px);
+    height: calc( 100% + 2px);
+    transition:all ease .3s;
+}
 .btn:hover {
     /* border: none; */
     transform: scale(1.02);
@@ -144,7 +154,8 @@ p {
 }
 .btn-0, 
 .btn, 
-.btn-1 {
+.btn-1,
+.btn-2 {
     padding: 10px 0;
     width: 170px;
 }
