@@ -85,8 +85,8 @@ console.log(window.innerWidth);
         header_logo.src = "assets/img/logo/logo.png";
         nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'black'});
         nav.style.background = 'white';
-        nav_contact_us[0].style.borderColor = 'black';
-        nav_contact_us[1].style.borderColor = 'black';
+        nav_contact_us[0].style.borderColor = '#290452';
+        nav_contact_us[1].style.borderColor = '#290452';
     }
     else if (scrollTop === 0) {
         header.style.background="transparent";
