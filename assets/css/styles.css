@@ -607,6 +607,6 @@ textarea {
     font-size: 28px;
 }
 .footer .bottom {
-    position: absolute;
+    position: block;
     inset: auto 15rem 2rem 15rem;
 }
