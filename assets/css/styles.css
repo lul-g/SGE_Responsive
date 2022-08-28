@@ -119,9 +119,6 @@ p {
     transition:all ease .3s;
 
 }
-.color {
-    display: none;
-}
 .btn-1 {
     position: absolute;
     top: -2.5px;
@@ -441,30 +438,53 @@ header nav .nav li i{
 
 .teams {
     z-index: 1;
-    justify-content: center;
     background-color: var(--main-bg-color);
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 500px 500px;
     padding: 10rem 5rem;
+}
+.temas {
+
+}
+.teams .txt-top p{
+    margin: 2rem 0;
 }
 .teams .txt-bottom {
     display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 200px 200px;
+    grid-gap: 50px;
+    grid-template-columns: max-content auto;
 }
+.teams .txt-bottom .box {
+    width: 23rem;
+    height:  23rem;
+}
+.teams .txt-bottom .box img{
+    position: relative;
+    top: 1.5rem;
+}
+.teams .txt-bottom .box p {
 
+}
+.teams .txt-bottom .box .profile {
+    /* margin-bottom: 2rem; */
+}
+.teams .txt-bottom .box .profile img {
+    border-radius: 50%;
+    width: 7vw;
+}
+.teams .txt-bottom .box .profile .txt{
+    position: relative;
+    top: 2rem;
+    left: 0rem;
+}
 .teams .txt-bottom > .box:first-child{
-    padding: 2rem; 
+    padding: 1rem 2rem; 
     color: #20eb92;
-
 }
 .teams .txt-bottom > .box:nth-child(2){
-    padding: 2rem; 
+    padding: 1rem 2rem; 
     color: #ffd209;
 }
 .teams .txt-bottom > .box:nth-child(3){
-    padding: 2rem; 
+    padding: 1rem 2rem; 
     color: #ff006e;
 }
 .teams .txt-bottom .box .profile img {
@@ -472,10 +492,31 @@ header nav .nav li i{
 }
 
 .contact {
-    border-bottom: white 2px solid;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
     z-index: 1;
-    justify-content: center;
+    flex-direction: row;
+    padding: 5rem 7rem 4rem 0;
+}
+.contact .not-form .txt-div {
+    text-align: center;
+}
+.contact .not-form .txt-div p{
+    margin: 2rem 8rem;
+}
+.contact .not-form .box {
+    margin: 2rem clamp(1rem, 10vw, 10rem);
+    flex-direction: column;
+    text-align: center;
+    --gap: 0;
+}
+.contact .not-form .box p{
+    color: var(--p-color);
+}
+.contact .not-form .box i {
+    font-size: 3rem;
+}
+.contact .not-form .box h3{
+    font-size: clamp(18px, 3.5vw, 28px);
 }
 .contact .not-form > .box:nth-child(2){
     padding: 1.8rem; 
@@ -495,19 +536,50 @@ header nav .nav li i{
 .contact .not-form > .box:nth-child(3) i{
     color: #fc573b;
 }
-.contact .not-form p{
-    color: var(--p-color);
-}
 .contact .form .btn-0 {
     border: transparent;
 }
+
+.contact .form {
+    flex-direction: column;
+    align-items: center;
+}
+.contact .form .form-group {
+    margin: 0 0 1.5rem 0 !important;
+    padding: 0 !important;
+    text-align: center;
+}
+.contact .form .form-group input, 
+textarea {
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 5px 10px var(--main-bg-color);
+    width: clamp(270px, 80vw, 570px);
+}
+.contact .form .form-group  textarea{
+    padding-bottom: 7rem;
+    text-align: start !important;
+}
+.contact .form .btn-0 {
+    margin-bottom: 2rem;
+    padding: .5rem 1rem;
+    align-items: center;
+}
+
+
 .footer {
+    padding: 5rem;
     background-color: var(--main-bg-color);
-    padding: 2.5rem 0;
 }
 .footer .top{
-    border-bottom: 2px var(--main-txt-color) solid;
     margin-bottom: 3rem;
+    justify-content: space-evenly;
+}
+.footer .top .group1 {
+    margin-right: 20rem; 
+}
+.footer .top .group2 {
+    margin-left: 20rem; 
 }
 .footer .top .group h1{
     font-size: 20px;
@@ -524,11 +596,17 @@ header nav .nav li i{
     font-weight: 500;
     line-height: 24px;
 }
-
+.footer .top .group2 {
+    flex-direction: column;
+}
 .footer .top .group2 ul li{
     display: inline;
     margin: 0 2rem 0 0;
 }
 .footer .top .group2 ul li a i{
     font-size: 28px;
+}
+.footer .bottom {
+    position: absolute;
+    inset: auto 15rem 2rem 15rem;
 }

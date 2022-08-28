@@ -1,6 +1,20 @@
 
 @import url('styles.css');
 
+
+/* special-teams-profile-img */
+@media (max-width: 380px) {
+    .teams .txt-bottom .box .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+    .teams .txt-bottom .box .profile .txt {
+        text-align: center;
+        margin-top: 3rem;
+        inset: 0;
+    }
+}
+
 /* reset background color for big screen size to mid */
 /* 620 below is max width
 620 above is min width */
@@ -187,6 +201,8 @@
     }
     .teams .txt-bottom .box {
         margin-top: 3rem;
+        width: auto;
+        height: auto;
     }
     .teams .txt-bottom .box img{
         position: relative;
@@ -196,7 +212,6 @@
         margin-bottom: 2rem;
     }
     .teams .txt-bottom .box .profile img {
-        border-radius: 50%;
         width: 20vw;
     }
     .teams .txt-bottom .box .profile .txt{
@@ -209,25 +224,14 @@
         width: 170px;
     }
 /* teams end */
-}
 
-/* special-teams-profile-img */
-@media (max-width: 380px) {
-    .teams .txt-bottom .box .profile {
-        flex-direction: column;
-        align-items: center;
-    }
-    .teams .txt-bottom .box .profile .txt {
-        text-align: center;
-        margin-top: 3rem;
-        inset: 0;
-    }
-}
 
 /* contact us start */
 .contact {
     flex-direction: column;
     --gap: 0;
+    border-bottom: white 2px solid;
+    padding: 0;
 }
 .contact .not-form {
     margin: 2rem 1rem 1rem 1rem;
@@ -236,55 +240,40 @@
     text-align: center;
 }
 .contact .not-form .txt-div p{
-    margin-top: 2rem;
-}
-.contact .not-form .box {
-    margin: 2rem clamp(1rem, 10vw, 10rem);
-    flex-direction: column;
-    text-align: center;
-    --gap: 0;
-    /* margin: 2rem 1rem; */
+    margin: 2rem auto;
 }
 .contact .not-form .box h3{
     font-size: clamp(18px, 3.5vw, 28px);
 }
-.contact .not-form .box i {
-    font-size: 3rem;
-}
 .contact .form {
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
 }
-.contact .form .form-group {
-    margin: 0 0 1.5rem 0 !important;
-    padding: 0 !important;
-    text-align: center;
-}
-.contact .form .form-group input, 
-textarea {
-    padding: 1rem;
-    border: none;
-    box-shadow: 0 5px 10px var(--main-bg-color);
-    width: clamp(270px, 80vw, 570px);
-}
-.contact .form .form-group  textarea{
-    padding-bottom: 7rem;
-    text-align: start !important;
-}
-.contact .form .btn-0 {
-    margin-bottom: 2rem;
-    padding: .5rem 1rem;
-    align-items: center;
-}
-
 /* contact us end */
 
 /* footer start */
-.footer .top {
+.footer {
+    background-color: var(--main-bg-color);
+    padding: 5rem 0;
+}
+.footer .top{
+    border-bottom: 2px var(--main-txt-color) solid;
+    margin-bottom: 3rem;
     flex-direction: column;
     padding: 0 1rem;
+}
+.footer .top .group1 {
+    margin-right: 0; 
+}
+.footer .top .group2 {
+    margin-left: 0; 
 }
 .footer .top .group {
     flex-direction: column;
 }
+.footer .bottom {
+    position: absolute;
+    inset: auto 2rem auto 2rem;
+}
 /* footer end */
+}
+
