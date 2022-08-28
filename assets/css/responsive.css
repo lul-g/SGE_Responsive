@@ -1,11 +1,27 @@
 
 @import url('styles.css');
 
-/* small devices (320 -620px) */
-@media (max-width:38.75em) {
-    .nav-icon {
-        display: none;
+/* reset background color for big screen size to mid */
+/* 620 below is max width
+620 above is min width */
+@media (min-width: 1230px) {
+    .nav {
+        background-color: transparent !important;
     }
+}
+
+/* screen size above midium */
+@media (min-width: 620px){
+    header .nav li{
+        margin-left: 1rem;
+    }
+    .home .col-1 {
+        margin-top: 4rem;
+        margin-right: 8rem;
+    }
+}
+/* small devices (320 -620px) */
+@media (max-width: 1230px) {
     .header-logo {
         position: fixed;
         left: 2rem;
@@ -18,13 +34,6 @@
         background-color: var(--main-bg-color);
         transform: translateX(100%);
         transition: transform .35s ease-out;
-        /* --gap: 2em; */
-    }
-    .nav .list {
-        transition: transform .4s ease-in-out;
-    }
-    .nav .list:hover {
-        transform: scale(1.1);
     }
     .nav[data-visible="true"] {
         transform: translateX(0%);
@@ -39,7 +48,7 @@
         display: block;
         position: absolute;
         top: 2.3rem;
-        right: 6rem;
+        right: 8rem;
         z-index: 9999;
         font-size: 1.5rem;
     }
@@ -50,15 +59,15 @@
     header .plane {
         right: 2rem;
     }   
+    header .blog {
+        right: 5rem;
+        z-index: 1;
+    }
 
 /* home start */
     .home {
         padding: 0 clamp(15px, 3vw, 56px);
         flex-direction: column;
-    }
-    .home .col-1 .btn-0, .btn, .btn-1 {
-        padding: 10px 0;
-        width: 170px;
     }
     .home .col-1 ul  {
         flex-direction: column;
@@ -72,15 +81,12 @@
         
     }
     .home .col-2 .search_img {
-        position: absolute;
         bottom: 10vw;
         right: 47vw;
         width: 40%;
-
-        animation: search;
-        animation-duration: 2s;
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
+    }
+    .home .col-1 {
+        margin-top: 0rem;
     }
     .home img {
         object-fit: contain;
@@ -94,15 +100,9 @@
 /* home end */
 
 /* services start */
-    .services {
-        flex-direction: column;
-    }
     .services .txt {
         margin: 3rem 1rem 2rem 1rem;
         text-align: center;
-    }
-    .services .txt h1 {
-        margin-bottom: 2rem;
     }
     .services .grid {
         margin: 0 1rem;
@@ -113,96 +113,19 @@
     .services .grid .col {
         margin: 0 0 4rem 0;
     }
-    .services .grid .col i {
-        position: absolute;
-        font-size: 2.5rem;
-        text-align: center;
-        box-sizing: content-box;
-        width: 4.7rem;
-        line-height: 4.7rem;
-        border-radius: 10px;
-        transition: ease-in-out .5s;
-    }
-    .services .grid .col1 i {
-        color: #20eb92;
-        background-color: #0d2a3e;
-    }
-    .services .grid .col1:hover i {
-        color: #0d2a3e;
-        background-color:#20eb92 ;
-    }
-        
-    .services .grid .col2 i {
-        color: #19a5be;
-        background-color: #0b2248;
-    }
-    .services .grid .col2:hover i {
-        color: #0b2248;
-        background-color: #19a5be;
-    }
-
-    .services .grid .col3 i {
-        color: #ffd209;
-        background-color: #2b2328;
-    }
-    .services .grid .col3:hover i {
-        color: #2b2328;
-        background-color: #ffd209;
-    }
-
-    .services .grid .col4 i {
-        color: #fc4835;
-        background-color:#2b1131;
-    }
-    .services .grid .col4:hover i {
-        color:#2b1131 ;
-        background-color: #fc4835;
+    .services .grid h2 {
+        margin: 0 0 0 6rem;
     }
     .services .grid p {
         margin-top: clamp(0rem, 5vw, 2rem);
-        margin-bottom: 1rem;
         margin-left: 6rem;
-    }
-    .services .grid h2 {
-        margin: 0 0 0 6rem;
-        text-transform: capitalize;
     }
     .services .grid a {
         margin: 0 0 0 6rem;
     }
-    .services .grid .col a::before {
-        content: "----------";
-        position: absolute;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.5s ease-in-out;
-        z-index: 1;
-        margin-top: 1rem;
+    .services .grid .col i {
+        margin: 0;
     }
-    .services .grid .col a:hover {
-        transition: ease-in-out .5s;
-        color: white;
-    }
-    .services .grid .col1 a::before {
-        color: #20eb92;
-    }
-    .services .grid .col2 a::before {
-        color: #19a5be;
-    }
-    .services .grid .col3 a::before {
-        color: #ffd209;
-    }
-     
-    .services .grid .col4 a::before {
-        color: #fc4835;
-    }
-      
-    .services .grid .col a:hover::before {
-        transform: scaleX(1);
-        transform-origin: left;
-        /* z-index: 999; */
-    }
-    
 /* services end */
 
 /* about start */
@@ -211,18 +134,15 @@
         align-items: center;
         justify-content: center;
         --gap: 0;
-    }
-    .about .txt {
-        margin: 5rem 2rem 2rem 2rem;
-    }
-    .about .txt-top {
-        text-align: center;
+        border-top: white 2px solid;
+        border-bottom: white 2px solid;
     }
     .about .txt-top h1 {
         margin: 0 2rem;
     }
     .about .txt-bottom {
         margin-left: 1rem;
+        padding: 0;
     }
     .about .txt-bottom h3 {
         margin-top: 1rem;
@@ -234,21 +154,21 @@
         color: #be63f9;
     }
     .about .img {
-        margin: 2rem 0 2.7rem 0;
+        margin: 2rem 0 4rem 3rem;
     }
     .about .img img{
         max-width: clamp(79%, 5vw, 89%);
         height: auto;
-        
     }
 /* about end */
 
 /* teams start */
     .teams {
+        border-bottom: white 2px solid;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         --gap: 0;
+        padding: 0;
+        display: flex;
     }
     .teams .txt-top {
         margin: 4rem 2rem 0rem 2rem;
@@ -262,6 +182,8 @@
     }
     .teams .txt-bottom {
         margin: 2rem 2rem 3rem 2rem;
+        display: block;
+        /* display: flex; */
     }
     .teams .txt-bottom .box {
         margin-top: 3rem;
@@ -317,18 +239,18 @@
     margin-top: 2rem;
 }
 .contact .not-form .box {
-    margin: 2rem clamp(1rem, 4vw, 5rem);
+    margin: 2rem clamp(1rem, 10vw, 10rem);
     flex-direction: column;
     text-align: center;
     --gap: 0;
+    /* margin: 2rem 1rem; */
 }
 .contact .not-form .box h3{
-    font-size: clamp(18px, 5vw, 28px);
+    font-size: clamp(18px, 3.5vw, 28px);
 }
 .contact .not-form .box i {
     font-size: 3rem;
 }
-
 .contact .form {
     flex-direction: column;
     align-items: center;

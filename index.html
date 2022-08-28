@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Document</title>
     <link rel="icon" href="assets/img/logo/logo.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -14,29 +14,25 @@
 </head>
 
 <body>
-    
     <section class="container">
+        <button class="to-top-btn" data-x="false">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </button>
         <div class="bg">
             <div class="bg-overlay"></div>
         </div>
         <header id="header" class="header-bg header secondary-header flex">
             <a href="#" class="header-logo"><img class="header-logo-w" src="assets/img/logo/logo-white.png" alt=""></a>
             <buttton class="toggle-nav" data-x="false"><i class="fa-solid fa-bars"></i></buttton>
-            <buttton class="plane"><i class="fa-solid fa-paper-plane"></i></buttton>
+            <buttton ><a class="plane" href="#contact"><i class="fa-solid fa-paper-plane"></i></a></buttton>
+            <a class="plane blog" href="http://sgehoney.blogspot.com/?m=1" target="_blank" class="blog"><i class="fa-brands fa-blogger-b"></i></a>
             <nav>
                 <ul id="nav" class="nav flex" data-visible="false">
-                    <li class="list"><a class="hover text nav-txt" href="#home">Home</a></li>
-                    <li class="list"><a class="hover text nav-txt" href="#services">Services</a></li>
-                    <li class="list"><a class="hover text nav-txt" href="#products">Products</a></li>
-                    <li class="list"><a class="hover text nav-txt" href="#about">About Us</a></li>
-                    <li class="list"><a class="hover text nav-txt" href="#teams">Teams</a></li>
-                    <li>
-                        <ul class="nav-icon flex">
-                            <li class="in-list1 hover"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                            <li class="in-list2 hover"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li class="in-list3 hover"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                        </ul>
-                    </li>
+                    <li class="list hover text nav-txt hme">Home</li>
+                    <li class="hover list"><a class="text nav-txt" href="#services">Services</a></li>
+                    <li class="hover list"><a class="text nav-txt" href="#products">Products</a></li>
+                    <li class="hover list"><a class="text nav-txt" href="#about">About Us</a></li>
+                    <li class="hover list"><a class="text nav-txt" href="#teams">Teams</a></li>
                     <li class="btn">
                         <a class="text btn-txt nav-txt thin" href="#contact">
                             <span class="btn-1"></span>
@@ -44,7 +40,14 @@
                         </a>
                     </li>
                     <li class="btn">
-                        <a class="text btn-txt nav-txt thin" href="">Blog</a>
+                        <a class="text btn-txt nav-txt thin" href="http://sgehoney.blogspot.com/?m=1" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <ul class="nav-icon flex">
+                            <li class="in-list1 hover"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li class="in-list2 hover"><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="in-list3 hover"><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
@@ -98,16 +101,15 @@
             </div>
             <div class="col col4">
                 <i class="fa-solid fa-chart-column"></i>
-                <h2 class="text header-2">SGE's Economic &amp; Policy Analysis Section</h2>
+                <h2 class="text header-2">SGE Economic &amp; Policy Analysis</h2>
                 <p class="p-txt sm">Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod tempor
                     incididunt emit.</p>
                 <a href="" class="p-txt sm bold text">Learn More</a>
             </div>
         </div>
     </section>
-
     <!-- <section class="container products"></section> -->
-    <section class="container about not-header flex">
+    <section id="about" class="container about not-header flex">
         <div class="txt">
             <div class="txt-top">
                 <h1 class="text header-txt bold">who we are</h1>
@@ -131,10 +133,11 @@
                     We have a team of experts ready to assist you in promoting your existing products, services, and enterprises as well as assist you in starting up a new business.
                 </p>
             </div>
-        <div class="img"><img src="/assets/img/content/content_thumb.png" alt=""></div>
     </div>
+    <div class="img"><img src="/assets/img/content/content_thumb.png" alt=""></div>
+
     </section>
-    <section class="container teams not-header flex">
+    <section id="teams" class="container teams not-header flex">
         <div class="txt-top">
             <h1 class="text header-txt bold">meet the team</h1>
             <p class="p-txt sm"> SGE have experts in quantitative and qualitative analysis, economic studies, general operations, research and development, cost-benefit analysis, economic planning, international trade and econometrics. 
@@ -181,19 +184,19 @@
             </div>
         </div>
     </section>
-    <section class="container contact not-header flex">
+    <section id="contact" class="container contact not-header flex">
         <div class="not-form">
             <div class="txt-div">
                 <h1 class="text header-txt bold">let's connect</h1>
                 <p class="p-txt sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. laborum illo ut sunt, vitae omnis?</p>
             </div>
             
-            <div class="box">
+            <div class="box flex">
                 <i class="fa-solid fa-mobile-screen-button"></i>
                 <h3 class="header-txt text thin">859-750-0000</h3>
                 <p class="p-text sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
-            <div class="box">
+            <div class="box flex">
                 <i class="fa-solid fa-envelope-open-text"></i>
                 <h3 class="header-txt text thin">mail&#64;yourcompany.com</h3>
                 <p class="p-text sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
