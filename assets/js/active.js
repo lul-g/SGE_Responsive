@@ -16,6 +16,10 @@ const plane = document.querySelector(".plane");
 const blog_icon = document.querySelector(".blog");
 
 
+//remove header 
+function remove_header() {  
+    header.style.top = "-15vh";  
+}
 // remove/add nav
 function remove_nav() {
             nav.setAttribute("data-visible", false);
@@ -50,8 +54,9 @@ home.addEventListener("click", goToTop)
 not_headers.forEach((not_header) => {
     not_header.addEventListener('click', () => {
         const is_visible = nav.getAttribute("data-visible");    
-        if(is_visible === "true") {
+        if(is_visible === "true" || header.style.top === '0px' && header.style.background !== 'transparent') {
             remove_nav();
+            header.style.top = '-15vh';
         }
  
     })
@@ -70,10 +75,8 @@ nav_toggle.addEventListener('click', () => {
 
 //scroll header-nav behavior
 var lastTopScroll = 0; 
-window.addEventListener("scroll", () => {
-console.log(window.innerWidth);
 
-    const is_visible = nav.getAttribute("data-visible");    
+window.addEventListener("scroll", () => {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if(scrollTop > lastTopScroll && scrollTop > 50) {
         to_top_btn.style.right = '5vh';
@@ -102,9 +105,19 @@ console.log(window.innerWidth);
     }
     else {
         header.style.top = '0';
+        const is_visible = nav.getAttribute("data-visible");    
+    //clear header when scroll has stopped
+
+        // if(hovering_on_nav === "false") {
+        //     window.clearTimeout(timer);
+        //     timer = setTimeout(function() {
+        //     console.log( 'Scrolling has stopped.' );  
+        //     header.style.top = "-15vh";  
+        // }, 1000);
+        // }
     }
     lastTopScroll = scrollTop;
-});
+}, false);
 
 // nav link click remove navbar 
 nav_txts.forEach((nav_txt) => {
