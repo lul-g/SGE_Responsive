@@ -253,6 +253,7 @@ header .header-logo{
     transition: all .2s ease-in-out;
     margin-top: .5rem;
 }
+
 header .header-logo:hover {
     transform: rotate(50deg);
 }
@@ -287,8 +288,15 @@ header nav .nav li i{
 .home p {
     margin: 1.5rem 0;
 }
+/* .home .col-2 {
+    margin-top: 3rem;
+} */
+.home .col-2 .calc_img {
+    width: 27vw;
+}
 .home .col-2 .search_img {
     position: absolute;
+    /* bottom: clamp(10vw, 10vw,30vw); */
     bottom: 10vw;
     right: 28vw;
     width: 20%;
@@ -321,12 +329,12 @@ header nav .nav li i{
 .services .grid {
     margin: 0 1rem;
     display: grid;
-    grid-gap: 15px 150px;
+    grid-gap: 15px 0px;
     grid-template-columns: 500px 500px;
     position: relative;
 }
 .services .grid .col {
-    margin: 0 3rem 4rem 12rem;
+    margin: 0 3rem 4rem 10rem;
 }
 .services .grid .col i {
     margin: 0 -7rem;
@@ -473,12 +481,7 @@ header nav .nav li i{
     position: relative;
     top: 1.5rem;
 }
-.teams .txt-bottom .box p {
 
-}
-.teams .txt-bottom .box .profile {
-    /* margin-bottom: 2rem; */
-}
 .teams .txt-bottom .box .profile img {
     border-radius: 50%;
     width: 7vw;
@@ -508,16 +511,16 @@ header nav .nav li i{
     /* background-color: var(--main-bg-color); */
     z-index: 1;
     flex-direction: row;
-    padding: 5rem 7rem 4rem 0;
+    padding: 5rem 2rem 4rem 0;
 }
 .contact .not-form .txt-div {
     text-align: center;
 }
 .contact .not-form .txt-div p{
-    margin: 2rem 8rem;
+    margin: 2rem 4rem 0 4rem;
 }
 .contact .not-form .box {
-    margin: 2rem clamp(1rem, 10vw, 10rem);
+    margin: 2rem clamp(0rem, 10vw, 10rem);
     flex-direction: column;
     text-align: center;
     --gap: 0;
@@ -538,7 +541,7 @@ header nav .nav li i{
     border-bottom: 9px #bf5ef9 solid;
 }
 .contact .not-form > .box:nth-child(3){
-    padding: 1rem 0.8rem; 
+    padding: 2rem 0.8rem; 
     color: #3d0365;
     border-radius: 10px;
     border-bottom: 9px #fc573b solid;
@@ -567,7 +570,7 @@ textarea {
     padding: 1rem;
     border: none;
     box-shadow: 0 5px 10px var(--main-bg-color);
-    width: clamp(270px, 80vw, 570px);
+    width: clamp(10px, 70vw, 470px);
 }
 .contact .form .form-group  textarea{
     padding-bottom: 7rem;
@@ -581,18 +584,20 @@ textarea {
 
 
 .footer {
-    padding: 5rem;
+    padding: 5rem 0;
     background-color: var(--main-bg-color);
 }
 .footer .top{
-    margin-bottom: 3rem;
-    justify-content: space-evenly;
+    margin: 0 clamp(2rem, 5vw, 15rem) 3rem clamp(2rem, 15vw, 15rem);
+    justify-content: space-between;
 }
 .footer .top .group1 {
-    margin-right: 20rem; 
+    /* margin-right: clamp(2rem, 2vw, 20rem);   */
+    margin-right: 2rem;
 }
 .footer .top .group2 {
-    margin-left: 20rem; 
+    /* margin-left: clamp(2rem, 2vw, 20rem);  */
+    margin-left: clamp(3rem , 20vw, 20rem);
 }
 .footer .top .group h1{
     font-size: 20px;

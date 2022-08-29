@@ -111,12 +111,15 @@ nav_txts.forEach((nav_txt) => {
     nav_txt.addEventListener("click", ()=> {
         setTimeout(() => {remove_nav()}, 200);
     });
-    plane.addEventListener('click', () => {
-        setTimeout(() => {remove_nav()}, 200);
-    });
-    blog_icon.addEventListener('click', () => {
-        setTimeout(() => {remove_nav()}, 200);
-    });
 });
 
-//nav bg for screen sizes
+//on click of these buttons hide nav
+to_top_btn.addEventListener('click', () => {
+    setTimeout(() => {remove_nav()}, 200);
+});
+plane.addEventListener('click', () => {
+    setTimeout(() => {remove_nav()}, 200);
+});
+blog_icon.addEventListener('click', () => {
+    setTimeout(() => {remove_nav()}, 200);
+});
