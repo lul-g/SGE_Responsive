@@ -1,0 +1,68 @@
+:root {
+   --main-clr: wheat;
+}
+.box {
+    background-color: transparent;
+}
+.main {
+    display: block;
+    color: var(--main-clr);
+}
+.top-div {
+    padding: 8rem 0 15rem 0;
+    text-align: center;
+}
+.top-div .header-txt {
+    padding-bottom: 1rem;
+    color: var(--main-clr) !important;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px; */
+}
+.content {
+    padding: 20vh 0;
+    justify-content: space-around;
+    text-align: center;
+}
+.content .top {
+    box-shadow: 3px 3px 4px 4px var(--main-clr);
+    padding: 2rem;
+}
+.content h1 {
+     color: var(--main-clr);
+     padding: 2rem 0;
+    /* -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px; */
+}
+.content ul i {
+    font-size: 20px;
+    color: var(--main-clr); 
+}
+.content li p{
+    padding: .7rem 0;
+    color: var(--main-clr) !important;
+    /* border: 1px solid wheat; */
+}
+.content .img {
+    margin: 10vh 0;
+    width: 20%;
+}
+.content .img img {
+    width: 170%;
+    background-color: var(--main-clr);
+    border-radius: 50%;
+}
+.para {
+    justify-content: space-between;
+    margin: 3rem 6rem;
+}
+.para p:first-child {
+    padding: 3rem 2rem;
+    box-shadow: -3px 3px 4px 4px var(--main-clr);
+}
+.para p:nth-child(2) {
+    padding: 3rem 2rem;
+    color: var(--main-clr) !important;
+    box-shadow: 3px -3px 4px 4px var(--main-clr);
+}
+
+
