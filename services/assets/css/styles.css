@@ -206,7 +206,7 @@ ul li {
 .bg-overlay {
     width: 100%;
     height: 100%;
-    opacity: .9;
+    opacity: .5;
     background:  black;
 }
 /* bg overlay end */
