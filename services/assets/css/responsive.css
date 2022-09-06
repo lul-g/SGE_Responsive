@@ -39,6 +39,7 @@
 @media (max-width: 744px) {
     .footer {
         padding: 2rem 0;
+        border-top: 2px var(--main-txt-color) solid;
     }
     .footer .top{
         border-bottom: 2px var(--main-txt-color) solid;
@@ -113,6 +114,12 @@
 /* 620 below is max width
 620 above is min width */
 @media (max-width: 620px) {
+    p {
+        color: wheat !important;
+    }
+    .bg-overlay {
+        opacity: .7;
+    }
     .header-logo {
         position: fixed;
         left: 2rem;
