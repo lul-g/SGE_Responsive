@@ -11,7 +11,7 @@
 }
 
 html,body {
-    height: 500vh;
+    /* height: 500vh; */
     /* max-width: 500px; */
     /* background: #06052f; */
     scroll-behavior: smooth;
@@ -422,6 +422,78 @@ header nav .nav li i{
     transform-origin: left;
     /* z-index: 999; */
 }
+
+
+/* .bg2 {
+    background-image: url(/assets/img/content/pexels-alleksana-4271927.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    z-index: -1;
+}
+.bg2-overlay {
+    width: 100%;
+    height: 170%;
+    opacity: .4;
+    background:  var(--main-bg-color);
+} */
+.products {
+    background-image: url(/assets/img/content/pexels-alleksana-4271927.jpg);
+    background-attachment: fixed;
+    padding: 35vh 1rem;
+    opacity: 1;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;  */
+    text-align: center;
+}
+
+.products p {
+    z-index: 55;
+    color: #06052f !important;
+}
+.products h1 {
+    padding-bottom: 2rem;
+    color: #06052f !important;
+}
+.products #email {
+    padding: 1rem;
+    border: none;
+    width: clamp(10px, 90vw, 370px);    
+    box-shadow: -5px 5px 5px 1px var(--main-bg-color);
+    margin: 0;
+}
+.products .form {
+    position: relative;
+}
+.products button {
+    transition: all 0.3s ease;
+    z-index: 1;
+    padding: 1rem;
+    background-color: #20eb92;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+.products button:hover {
+    background-color: #2bf8a38e;
+}
+.products div ul li {
+    padding: 2rem 0 0 2rem;
+}
+.products ul li a i{
+    font-size: 28px;
+    color: #06052f !important;
+}
+
+
+
 .about {
     background-color: var(--main-bg-color);
     z-index: 1;
@@ -429,7 +501,6 @@ header nav .nav li i{
     flex-direction: row;
     align-items: center;
     padding: 4rem 2rem 0rem 0rem;
-
 }
 .about .txt {
     margin: 0 2rem 2rem 2rem;

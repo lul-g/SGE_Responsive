@@ -49,7 +49,6 @@ const goToTop = () => {
   };
 to_top_btn.addEventListener("click", goToTop)
 home.addEventListener("click", goToTop)
-
 // nav toggle outside of header click
 not_headers.forEach((not_header) => {
     not_header.addEventListener('click', () => {
