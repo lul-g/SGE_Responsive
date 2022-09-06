@@ -18,6 +18,7 @@
     .products button {
         margin: 1rem auto;
         display: block;
+        color: black;
     }
 }
 
