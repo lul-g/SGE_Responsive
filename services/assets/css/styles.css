@@ -408,6 +408,11 @@ textarea {
     position: absolute;
     inset: auto 15rem 2rem 15rem;
 }
+.footer .bottom i{
+    font-size: 20px;
+    color: wheat;
+    padding: 0 .5rem;
+}
 
 
 /* services page-1 */

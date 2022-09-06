@@ -27,10 +27,13 @@
 
 @media (max-width: 919px) and (min-width: 745px) {
     .footer .top .group2 div ul {
-        margin: 10px 0 0 -10px;
-        display: grid;
-        grid-gap: 10px 0;
-        grid-template-columns: 100px auto;
+        margin: 0 0 0 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .bottom {
+        padding: 2rem 0 0 0;
     }
 }
 
@@ -47,12 +50,13 @@
         margin: 0 0 3rem 0;
         flex-direction: column;
         padding: 0 1rem;
+        align-items: center;
     }
     .footer .top .group1 {
         margin-right: 0; 
     }
     .footer .top .group2 {
-        margin-left: 0; 
+        margin-left: 1rem; 
     }
     .footer .top .group {
         flex-direction: column;
@@ -60,6 +64,7 @@
     .footer .bottom {
         position: absolute;
         inset: auto 2rem auto 2rem;
+        padding-bottom: 2rem;
     }
 }
 @media (max-width: 1182px) and (min-width: 621px){
@@ -166,7 +171,6 @@
 .contact {
     flex-direction: column;
     --gap: 0;
-    border-bottom: white 2px solid;
     padding: 0;
 }
 .contact .not-form {
@@ -197,11 +201,8 @@
     flex-direction: column;
     padding: 0 1rem;
 }
-.footer .top .group1 {
-    margin-right: 0; 
-}
 .footer .top .group2 {
-    margin-left: 0; 
+    margin-left: 1rem; 
 }
 .footer .top .group {
     flex-direction: column;
@@ -215,7 +216,8 @@
 
 @media (max-width: 500px) {
     .content .top {
-        padding: 2rem 0rem !important;
+        padding: 2rem .3rem !important;
+        box-shadow: 0 0 1rem 2px;
     }
     .para {
         margin: 3rem 1rem !important;
