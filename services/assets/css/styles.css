@@ -194,8 +194,8 @@ ul li {
 /* bg overlay start*/
 .bg {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     /* background: url('../img/content/layered-waves-haikei\ \(4\).svg'); */
     background-image: url('/assets/img/bg/pro.jpg');
     background-position: center;
@@ -204,8 +204,8 @@ ul li {
     z-index: -1;
 }
 .bg-overlay {
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     opacity: .9;
     background:  black;
 }
