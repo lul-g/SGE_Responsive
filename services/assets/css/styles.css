@@ -409,6 +409,8 @@ textarea {
     inset: auto 15rem 2rem 15rem;
 }
 
+
+/* services page-1 */
 :root {
     --main-clr: wheat;
  }
@@ -418,9 +420,10 @@ textarea {
  .main {
      display: block;
      color: var(--main-clr);
+     padding: 0 0 20vh 0;
  }
  .top-div {
-     padding: 8rem 0 15rem 0;
+     padding: 20vh 0;
      text-align: center;
  }
  .top-div .header-txt {
@@ -430,7 +433,7 @@ textarea {
      -webkit-text-stroke: 1px; */
  }
  .content {
-     padding: 20vh 0;
+     padding: 15vh 0;
      justify-content: space-around;
      text-align: center;
  }
