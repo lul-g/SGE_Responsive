@@ -215,9 +215,7 @@
 
 @media (max-width: 500px) {
     .content .top {
-        padding: 2rem 1rem !important;
-        text-align: start;
-        box-shadow: none !important;
+        padding: 2rem 0rem !important;
     }
     .para {
         margin: 3rem 1rem !important;
