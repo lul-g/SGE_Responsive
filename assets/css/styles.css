@@ -425,11 +425,11 @@ header nav .nav li i{
 
 .products {
     margin: 0;
-    background-image: url(/assets/img/bg/pro.jpg);
-    /* background-attachment: fixed; */
+    background-image: url(/assets/img/bg/pro2.jpg);
+    background-attachment: fixed;
     padding: 20vh 1rem;
     opacity: 1;
-    background-position: 0px;
+    background-position: bottom -50px;
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
