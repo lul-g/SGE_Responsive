@@ -3,7 +3,7 @@
     --main-bg-clr: #06052f;
     --main-clr: white;
     --main-p-clr: #7a819b;
-    --secondary-txt-clr: hsl(189, 50%, 52%);
+    --secondary-txt-clr: hsl(9, 60%, 52%);
  }
  .grid {
     display: grid;
@@ -47,8 +47,15 @@
     border-bottom: 1px var(--secondary-txt-clr) solid;
 }
 .para p:nth-child(3) {
-    padding: 2rem 0rem 0 0rem;
     color: var(--main-clr) !important;
+    padding: 2rem 0rem 0 0rem;
+}
+.para p:nth-child(4) {
+    padding: 2rem 0rem 0 0rem;
+}
+.para p:nth-child(5) {
+    color: var(--main-clr) !important;
+    padding: 2rem 0rem 0 0rem;
 }
 
 .para img {

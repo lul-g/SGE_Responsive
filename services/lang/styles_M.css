@@ -1,0 +1,81 @@
+/* services page-1 */
+:root {
+    --main-bg-clr: #06052f;
+    --main-clr: white;
+    --main-p-clr: #7a819b;
+    --secondary-txt-clr: #c2ab47;
+ }
+ .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+ }
+
+
+ .main {
+     display: block;
+}
+ .top-div {
+     padding: 20vh 0;
+     text-align: center;
+ }
+ .top-div .header-txt {
+    padding-bottom: 1rem;
+    color: var(--main-clr) !important;
+ }
+ .content {
+     padding: 15vh 5rem;
+     text-align: center;
+     background-color: #06052f;
+ }
+ .content ul {
+    text-align:start;
+ }
+ .content .top {
+    justify-content:space-around;
+    align-items: center;
+    padding: 2rem 0; 
+ }
+ .content .top h1 {
+    padding: 2rem 0;
+    color: var(--secondary-txt-clr);
+    line-height: 4rem;
+ }
+ .content ul li {
+    position: relative;
+ }
+ .content .top ul li::before {
+    content: "\f135";
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    font: var(--fa-font-solid);
+    color: var(--secondary-txt-clr);
+ }
+ .content li p{
+    padding: .7rem 0;
+ }
+.content .top img {
+    width: 45vw;
+}
+.para {
+    margin: 3rem 0 0 0;
+    text-align: start;
+    justify-content:center;
+    align-items: center;
+}
+.para p {
+    line-height: 2.5rem;
+    margin-left: 3rem;
+}
+.para p:first-child {
+    padding: 3rem 0rem 2rem 0rem;
+    border-bottom: 1px #40bf80 solid;
+}
+.para p:nth-child(2) {
+    padding: 2rem 0rem 0 0rem;
+    color: var(--main-clr) !important;
+}
+
+.para img {
+    width: 150%;
+}

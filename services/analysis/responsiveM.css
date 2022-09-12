@@ -1,0 +1,23 @@
+@media (max-width: 1000px) {
+    .content {
+        padding: 15vh 5vw;
+        flex-direction: column;
+        --gap: 3rem;
+
+    }
+    .content img {
+        width: 65vw;
+    }
+}
+@media(max-width:620px) {
+    .content {
+        padding: 15vh 0vw;
+    }
+    .para p {
+        line-height: 2.5rem;
+        margin: 0 1rem;
+    }
+    .content img {
+        width: 65vw;
+    }
+}
