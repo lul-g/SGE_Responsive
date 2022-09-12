@@ -520,9 +520,6 @@ header nav .nav li i{
     background-color: var(--main-bg-color);
     padding: 10rem 5rem;
 }
-.temas {
-
-}
 .teams .txt-top p{
     margin: 2rem 0;
 }
@@ -533,7 +530,7 @@ header nav .nav li i{
 }
 .teams .txt-bottom .box {
     width: 23rem;
-    height:  23rem;
+    height:  28rem;
 }
 .teams .txt-bottom .box img{
     position: relative;
