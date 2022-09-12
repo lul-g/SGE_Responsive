@@ -1,0 +1,35 @@
+body{
+    background-color: #0e1e25;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #20eb92;
+    flex-direction: column;
+    
+}
+div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+i {
+    font-size: 100px;
+    color: #19a5be;
+}
+div:nth-child(2){
+    font-size: 25px;
+    top: 90%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #19a5be;
+}
+div:nth-child(2) i{
+    font-size: 25px;
+    color: #fc4835;
+}
