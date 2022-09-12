@@ -1,7 +1,9 @@
 
 @import url('styles.css');
 
-
+@media(max-width:319px) {
+    
+}
 
 /* reset background color for above 620px mark */
 @media (min-width: 1183px) {
@@ -41,8 +43,7 @@
 
 @media (max-width: 744px) {
     .footer {
-        padding: 2rem 0;
-        border-top: 2px var(--main-txt-color) solid;
+        border-top: 2px var(--main-txt-color) solid;       
     }
     .footer .top{
         border-bottom: 2px var(--main-txt-color) solid;
@@ -63,9 +64,9 @@
     }
     .footer .bottom {
         position: absolute;
-        inset: auto 2rem auto 2rem;
-        padding-bottom: 2rem;
+        inset: auto 2rem 2rem 2rem;
     }
+
 }
 @media (max-width: 1182px) and (min-width: 621px){
     .nav {
@@ -189,7 +190,6 @@
 
 /* footer start */
 .footer {
-    padding: 2rem 0;
 }
 .footer .top{
     border-bottom: 2px var(--main-txt-color) solid;
@@ -205,7 +205,7 @@
 }
 .footer .bottom {
     position: absolute;
-    inset: auto 2rem auto 2rem;
+    inset: auto 2rem 1.5rem 2rem;
 }
 /* footer end */
 }
