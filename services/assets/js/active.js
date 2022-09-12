@@ -49,7 +49,6 @@ const goToTop = () => {
   };
 to_top_btn.addEventListener("click", goToTop)
 home.addEventListener("click", goToTop)
-
 // nav toggle outside of header click
 not_headers.forEach((not_header) => {
     not_header.addEventListener('click', () => {
@@ -81,26 +80,26 @@ window.addEventListener("scroll", () => {
     if(scrollTop > lastTopScroll && scrollTop > 50) {
         to_top_btn.style.right = '5vh';
         header.style.top = '-15vh';
-        header.style.background="wheat";
+        header.style.background="white";
         nav_toggle.style.color="black";
         plane.style.color="black";
         blog_icon.style.color="black";
         header_logo.src = "/assets/img/logo/logo.png";
         nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'black'});
-        nav.style.background = 'wheat';
+        nav.style.background = 'white';
         nav_contact_us[0].style.borderColor = '#290452';
         nav_contact_us[1].style.borderColor = '#290452';
     }
     else if (scrollTop === 0) {
         header.style.background="transparent";
-        nav_toggle.style.color="wheat";
-        plane.style.color="wheat";
-        blog_icon.style.color="wheat";
+        nav_toggle.style.color="white";
+        plane.style.color="white";
+        blog_icon.style.color="white";
         header_logo.src = "/assets/img/logo/logo-white.png";
-        nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'wheat'});
-        nav.style.background = 'black';
-        nav_contact_us[0].style.borderColor = 'wheat';
-        nav_contact_us[1].style.borderColor = 'wheat';
+        nav_txts.forEach((nav_txt) => {nav_txt.style.color = 'white'});
+        nav.style.background = '#06052f';
+        nav_contact_us[0].style.borderColor = 'white';
+        nav_contact_us[1].style.borderColor = 'white';
         to_top_btn.style.right = '-10vh';
     }
     else {

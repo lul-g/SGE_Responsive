@@ -20,7 +20,7 @@ html,body {
 /* gloabl variables */
 :root {
     --main-bg-color: #06052f;
-    --main-txt-color: wheat; 
+    --main-txt-color: white; 
     --p-color: #7a819b;
     --header_home_height: 5.2rem;
 }
@@ -197,7 +197,7 @@ ul li {
     width: 100%;
     height: 100%;
     /* background: url('../img/content/layered-waves-haikei\ \(4\).svg'); */
-    background-image: url(/assets/img/bg/pro.jpg);
+    background-image: url(/assets/img/bg/welcome_bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
@@ -207,12 +207,13 @@ ul li {
     width: 100%;
     height: 100%;
     opacity: .95;
-    background:  black;
+    background:  var(--main-bg-color);
 }
 /* bg overlay end */
 
 /* to top button start*/
 .to-top-btn {
+    color: #20eb92;
     position: fixed;
     inset: auto -10vh 5vh auto;
     z-index: 9999;
@@ -224,7 +225,6 @@ ul li {
     font-size: 40px;
     cursor: pointer;
     /* background-color: #001220; */
-    color: wheat;
     border-radius: 100%;
 }
 .nav[data-x="true"] {
@@ -365,7 +365,7 @@ textarea {
 
 .footer {
     padding: 5rem 0;
-    /* background-color: var(--main-bg-color); */
+    background-color: var(--main-bg-color);
 }
 .footer .top{
     margin: 0 clamp(2rem, 5vw, 15rem) 3rem clamp(2rem, 15vw, 15rem);
@@ -410,79 +410,8 @@ textarea {
 }
 .footer .bottom i{
     font-size: 20px;
-    color: wheat;
+    color: #20eb92;
     padding: 0 .5rem;
 }
 
 
-/* services page-1 */
-:root {
-    --main-clr: wheat;
- }
- .box {
-     background-color: transparent;
- }
- .main {
-     display: block;
-     color: var(--main-clr);
-     padding: 0 0 20vh 0;
- }
- .top-div {
-     padding: 20vh 0;
-     text-align: center;
- }
- .top-div .header-txt {
-     padding-bottom: 1rem;
-     color: var(--main-clr) !important;
-     /* -webkit-text-fill-color: transparent;
-     -webkit-text-stroke: 1px; */
- }
- .content {
-     padding: 15vh 0;
-     justify-content: space-around;
-     text-align: center;
- }
- .content .top {
-     box-shadow: 3px 3px 4px 4px var(--main-clr);
-     padding: 2rem;
- }
- .content h1 {
-      color: var(--main-clr);
-      padding: 2rem 0;
-     /* -webkit-text-fill-color: transparent;
-     -webkit-text-stroke: 1px; */
- }
- .content ul i {
-     font-size: 20px;
-     color: var(--main-clr); 
- }
- .content li p{
-     padding: .7rem 0;
-     color: var(--main-clr) !important;
-     /* border: 1px solid wheat; */
- }
- .content .img {
-     margin: 10vh 0;
-     width: 20%;
- }
- .content .img img {
-     width: 170%;
-     background-color: var(--main-clr);
-     border-radius: 50%;
- }
- .para {
-     justify-content: space-between;
-     margin: 3rem 6rem;
- }
- .para p:first-child {
-     padding: 3rem 2rem;
-     box-shadow: -3px 3px 4px 4px var(--main-clr);
- }
- .para p:nth-child(2) {
-     padding: 3rem 2rem;
-     color: var(--main-clr) !important;
-     box-shadow: 3px -3px 4px 4px var(--main-clr);
- }
- 
- 
- 
