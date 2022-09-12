@@ -25,7 +25,7 @@
             <div class="bg-overlay"></div>
         </div>
         <header id="header" class="header-bg header secondary-header flex">
-            <a href="#" class="header-logo"><img class="header-logo-w" src="../assets/img/logo/logo-white.png" alt=""></a>
+            <a href="/index.html" class="header-logo"><img class="header-logo-w" src="../assets/img/logo/logo-white.png" alt=""></a>
             <buttton class="toggle-nav" data-x="false"><i class="fa-solid fa-bars"></i></buttton>
             <buttton ><a class="plane" href="#contact"><i class="fa-solid fa-paper-plane"></i></a></buttton>
             <a class="plane blog" href="http://sgehoney.blogspot.com/?m=1" target="_blank" class="blog"><i class="fa-brands fa-blogger-b"></i></a>
@@ -81,37 +81,40 @@
             
             <div class="box flex">
                 <i class="fa-solid fa-mobile-screen-button"></i>
-                <h3 class="header-txt text thin">859-750-0000</h3>
+                <h3 class="header-txt text thin">(202) 299-4958</h3>
                 <p class="p-text sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
             <div class="box flex">
                 <i class="fa-solid fa-envelope-open-text"></i>
-                <h3 class="header-txt text thin">mail&#64;yourcompany.com</h3>
+                <h3 class="header-txt text thin">selam7@gmail.com</h3>
                 <p class="p-text sm">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             </div>
 
         </div>
         <div class="form flex">
-            <form action="">
+            <form name="contact-form" class="contact-form" method="POST" data-netlify="true">
                 <div class="form-group">
-                    <input type="text " name="name" id="name" placeholder="Name" required>
+                    <input type="text " name="Name 🧑" class="name" placeholder="Full Name" required>
                 </div>
                 <div class="form-group ">
-                    <input type="text " name="name" id="name" placeholder="Company Name" required>
+                    <input type="text " name="Cmp_name 🏪" class="cmp_name" placeholder="Company Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="email" name="Email ✉" class="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                    <input type="tel" name="email" id="email" placeholder="phone" required>
+                    <input type="tel" name="Phone 📞" class="phone" placeholder="phone" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="text" name="Subject ✍" class="subject" placeholder="Subject" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <textarea name="Message" class="message" placeholder="Message" required></textarea>
                 </div>
-                <button type="submit" id="submit" class="btn-0 btn-txt thin">Send Message</button>
+                <div class="form-group">
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
+                <button type="submit" id="submit" class="submit btn-0 btn-txt thin">Send Message</button>
             </form>
         </div>
     </section>
@@ -121,10 +124,10 @@
                 <h1 class="header-2 text">Services</h1>
                 <div>
                     <ul>
-                        <li><a class="text p-txt" href="">Business &amp; consulting</a></li>
-                        <li><a class="text p-txt" href="">international trade promotion</a></li>
-                        <li><a class="text p-txt" href="">language services</a></li>
-                        <li><a class="text p-txt" href="">economic analysis</a></li>
+                        <li><a class="text p-txt" href="/services/consulting/index.html">Business &amp; consulting</a></li>
+                        <li><a class="text p-txt" href="/services/trade/index.html">international trade promotion</a></li>
+                        <li><a class="text p-txt" href="/services/lang/index.html">language services</a></li>
+                        <li><a class="text p-txt" href="/services/analysis/index.html">economic analysis</a></li>
                     </ul>
                 </div>
             </div>
@@ -132,7 +135,7 @@
                 <h1 class="header-2 text">Follow us</h1>
                 <div class="p-txt">
                     <ul>
-                        <li><a href="/services/consulting/index.html"><i class="p-txt fa-brands fa-facebook"></i></a></li>
+                        <li><a href=""><i class="p-txt fa-brands fa-facebook"></i></a></li>
                         <li><a href=""><i class="p-txt fa-brands fa-twitter"></i></a></li>
                         <li><a href=""><i class="p-txt fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href=""><i class="p-txt fa-brands fa-instagram"></i></a></li>
