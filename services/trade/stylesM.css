@@ -1,0 +1,55 @@
+/* services page-1 */
+:root {
+    --main-bg-clr: #06052f;
+    --main-clr: white;
+    --main-p-clr: #7a819b;
+ }
+ .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+ }
+
+
+ .main {
+     display: block;
+}
+ .top-div {
+     padding: 20vh 0;
+     text-align: center;
+ }
+ .top-div .header-txt {
+    padding-bottom: 1rem;
+    color: var(--main-clr) !important;
+ }
+ .content {
+     padding: 15vh 2rem;
+     text-align: center;
+     background-color: #06052f;
+     justify-content:space-between;
+     align-items: center;
+ }
+ .content h1 {
+    text-align: center;
+    color: #78dced !important;
+    line-height: 4rem;
+ }
+.para {
+    margin: 3rem 0 0 0;
+    text-align: start;
+}
+.para p {
+    line-height: 2.5rem;
+    margin: 0 3rem;
+}
+.para p:nth-child(2) {
+    padding: 3rem 0rem 2rem 0rem;
+    border-bottom: 1px #19a5be solid;
+}
+.para p:nth-child(3) {
+    padding: 2rem 0rem 0 0rem;
+    color: var(--main-clr) !important;
+}
+
+.para img {
+    width: 150%;
+}
