@@ -11,21 +11,21 @@
     .content .top img {
         width: 70vw;
     }
-    .para {
+    .content .para {
         flex-direction: column;
     }
-    .para img {
+    .content .para img {
         width: 80vw !important;
     }
 }
 @media(max-width:1000px) {
-    .para p {
+    .content .para p {
         margin-left: 0rem;
     }
-    .para {
+    .content .para {
         flex-direction: column;
     }
-    .para img {
+    .content .para img {
         width: 50vw;
     }
 }
