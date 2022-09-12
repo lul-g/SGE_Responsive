@@ -23,7 +23,7 @@
     color: var(--main-clr) !important;
  }
  .content {
-     padding: 15vh 5rem;
+     padding: 15vh 0 15vh 3rem;
      text-align: center;
      background-color: #06052f;
  }

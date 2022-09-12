@@ -257,8 +257,8 @@ header .header-logo{
     margin-top: .5rem;
 }
 
+
 header .header-logo:hover {
-    transform: rotate(50deg);
 }
 header nav .nav li{
     display: inline !important;
@@ -283,7 +283,8 @@ header nav .nav li i{
 }
 /* header end */
 .home {
-    padding: 5rem 7rem;
+    padding: 5rem;
+    justify-content: space-around;
 }
 .home h1 {
     line-height: 3rem;
@@ -294,25 +295,39 @@ header nav .nav li i{
 /* .home .col-2 {
     margin-top: 3rem;
 } */
+.home .col-2 svg {
+    width: 47vw;
+}
 .home .col-2 .calc_img {
     width: 27vw;
 }
-.home .col-2 .search_img {
-    position: absolute;
-    /* bottom: clamp(10vw, 10vw,30vw); */
-    bottom: 10vw;
-    right: 28vw;
-    width: 20%;
-    object-fit: contain;
-    height: auto;
-
-    animation: search;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+@keyframes locationa {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-25px);
+    }
 }
-@keyframes search {
-    0%{transform: translateY(50px)};
+@keyframes locationb {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-45px);
+    }
+}
+
+#Location1 {
+    animation: locationb 2.5s linear infinite alternate;
+}   
+#Location2 {
+    animation: locationa 2.5s linear infinite alternate;
+
+}
+#Location3 {
+    animation: locationb 2.5s linear infinite alternate;
+
 }
 
 .services {
@@ -330,10 +345,9 @@ header nav .nav li i{
     margin-bottom: 2rem;
 }
 .services .grid {
-    margin: 0 1rem;
     display: grid;
     grid-gap: 15px 0px;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 488px 488px;
     position: relative;
 }
 .services .grid .col {
@@ -487,7 +501,7 @@ header nav .nav li i{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding: 4rem 2rem 0rem 0rem;
+    padding: 4rem 2rem 0rem 2rem;
 }
 .about .txt {
     margin: 0 2rem 2rem 2rem;
@@ -498,9 +512,7 @@ header nav .nav li i{
 .about .txt-top h1 {
         margin: .5rem 0;
 }
-.about .txt-bottom {
-    padding: 0 0 0 5rem;
-}
+
 .about .txt-bottom h3 {
     font-size: larger !important;
     margin-top: 1rem;
@@ -512,9 +524,8 @@ header nav .nav li i{
     color: #be63f9;
 }
 .about .img {
-    margin: 2rem 0 4rem 3rem;
+    margin: 2rem auto 4rem auto;
 }
-
 .teams {
     z-index: 1;
     background-color: var(--main-bg-color);

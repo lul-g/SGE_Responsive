@@ -1,15 +1,16 @@
 
 @import url('styles.css');
 
+
 /* special-teams-profile-img */
 @media (max-width: 380px) {
     .teams .txt-bottom .box .profile {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .teams .txt-bottom .box .profile .txt {
-        text-align: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
         inset: 0;
     }
 }
@@ -28,6 +29,10 @@
     }
 }
 @media (max-width: 1100px) and (min-width: 621px) {
+    .home .col-2 svg {
+        width: 45vw;
+        height: 107vh;
+    }
     .services .txt{
         margin: 0;
     }
@@ -46,8 +51,11 @@
         align-items: center;
         padding: 4rem 2rem 0rem 0rem;
     }
-    .about img {
-        width: 80%;
+    .about .img {
+        margin: 2rem 0 4rem 3rem;
+    }
+    .about .txt-bottom {
+        padding: 0 0 0 5rem;
     }
     .contact {
         flex-direction: column;
@@ -223,12 +231,18 @@
     }
     .home .col-1 {
         margin-top: 4rem;
-        margin-right: 8rem;
+        /* margin-right: 8rem; */
     }
 }
 /* small devices (320 -620px) */
 /* 620 below is max width
 620 above is min width */
+@media(max-width: 970px) {
+    .home .col-2 svg {
+        width: 77vw;
+        height: auto;
+    }
+}
 @media (max-width: 620px) {
     .header-logo {
         position: fixed;
@@ -281,30 +295,17 @@
         flex-direction: column;
     }
     .home .col-2 {
-        left: 35vw;
-        margin: 10vw 0 10vw 30vw;
-    }
-    .home .col-2 .calc_img {
-        position: relative;
-        width: 80%;
-    }
-    .home .col-2 .search_img {
-        bottom: 10vw;
-        right: 47vw;
-        width: 40%;
+        /* left: 35vw; */
+        margin: 0 auto 10vw auto;
     }
     .home .col-1 {
         margin-top: 0rem;
     }
-    .home img {
-        object-fit: contain;
+    .home .col-2 svg {
+        width: 87vw;
         height: auto;
-        width: 80%;
     }
-    
-    @keyframes search {
-        0%{transform: translateY(50px)};
-    }
+
 /* home end */
 
 /* services start */
@@ -362,10 +363,10 @@
         color: #be63f9;
     }
     .about .img {
-        margin: 2rem 0 4rem 3rem;
+        margin: 2rem auto 4rem 3rem;
     }
     .about .img img{
-        max-width: clamp(79%, 5vw, 89%);
+        width: clamp(89%, 10vw, 99%);
         height: auto;
     }
 /* about end */
@@ -471,3 +472,16 @@
 /* footer end */
 }
 
+@media(max-width:400px) {
+    .about {
+        padding: auto 2rem;
+    }
+    .about .txt {
+        padding: 0;
+        margin: 0;
+    }
+    .about .txt-top h1{
+        margin: 0;
+        padding: 0;
+    }
+}
