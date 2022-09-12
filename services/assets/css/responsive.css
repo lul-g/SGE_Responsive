@@ -119,11 +119,8 @@
 /* 620 below is max width
 620 above is min width */
 @media (max-width: 620px) {
-    p {
-        color: wheat !important;
-    }
     .bg-overlay {
-        opacity: .7;
+        opacity: .85;
     }
     .header-logo {
         position: fixed;
@@ -214,25 +211,3 @@
 /* footer end */
 }
 
-@media (max-width: 500px) {
-    .content .top {
-        padding: 2rem .3rem !important;
-        box-shadow: 0 0 1rem 2px;
-    }
-    .para {
-        margin: 3rem 1rem !important;
-    }
-}
-@media (max-width: 800px) {
-    .content {
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    .content .img {
-        display: none;
-    }
-    .para {
-        flex-direction: column;
-        gap: 2rem;
-    }
-}

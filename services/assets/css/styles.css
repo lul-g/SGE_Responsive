@@ -294,8 +294,6 @@ header nav .nav li i{
 }
 .contact .not-form .txt-div p{
     margin: 2rem 4rem 0 4rem;
-}.contact .not-form .txt-div h1{
-    color: wheat;
 }
 .contact .not-form .box {
     margin: 2rem clamp(0rem, 10vw, 10rem);

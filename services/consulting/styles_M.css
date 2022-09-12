@@ -12,9 +12,7 @@
 
  .main {
      display: block;
-     color: var(--main-clr);
-     padding: 0 0 20vh 0;
- }
+}
  .top-div {
      padding: 20vh 0;
      text-align: center;
@@ -24,25 +22,22 @@
     color: var(--main-clr) !important;
  }
  .content {
-     padding: 15vh 5vw;
+     padding: 15vh 5rem;
      text-align: center;
      background-color: #06052f;
  }
  .content ul {
-    text-align: start;
+    text-align:start;
  }
  .content .top {
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
-    padding: 2rem; 
- }
- .content .top .txt {
-    border-right: .5px hsl(150, 50%, 50%) solid;
-    padding-right: 8rem;
+    padding: 2rem 0; 
  }
  .content .top h1 {
     padding: 2rem 0;
     color: hsl(150, 50%, 50%) !important;
+    line-height: 4rem;
  }
  .content ul li {
     position: relative;
@@ -56,24 +51,20 @@
     color: #40bf80;
  }
  .content li p{
-     padding: .7rem 0;
+    padding: .7rem 0;
  }
- .content .img {
-    width: 40%;
-}
-.content .img img {
-    width: 110%;
-    padding-left: 1rem;
+.content .top img {
+    width: 45vw;
 }
 .para {
-    margin: 3rem 2rem 0 0;
+    margin: 3rem 0 0 0;
     text-align: start;
     justify-content:center;
     align-items: center;
 }
 .para p {
     line-height: 2.5rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
 }
 .para p:first-child {
     padding: 3rem 0rem 2rem 0rem;
@@ -83,11 +74,8 @@
     padding: 2rem 0rem 0 0rem;
     color: var(--main-clr) !important;
 }
-.para .img {
-    width: 170%;
+
+.para img {
     transform: rotate3d(0,1,0, 180deg);
-}
-.para .img img {
-    width: 100%;
-    padding-left: 1rem;
+    width: 150%;
 }
