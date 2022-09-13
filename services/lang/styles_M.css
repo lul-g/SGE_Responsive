@@ -33,7 +33,7 @@
  .content .top {
     justify-content:space-around;
     align-items: center;
-    padding: 2rem 0; 
+    padding: 2rem 2rem 0 4rem; 
  }
  .content .top h1 {
     padding: 2rem 0;
@@ -58,17 +58,17 @@
     width: 45vw;
 }
 .para {
-    margin: 3rem 0 0 0;
+    margin: 1rem 0 0 0;
     text-align: start;
     justify-content:center;
     align-items: center;
 }
 .para p {
     line-height: 2.5rem;
-    margin-left: 3rem;
+    margin:0 3rem;
 }
 .para p:first-child {
-    padding: 3rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
     border-bottom: 1px #40bf80 solid;
 }
 .para p:nth-child(2) {

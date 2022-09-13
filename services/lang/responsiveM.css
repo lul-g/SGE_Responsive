@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .content {
         padding: 15vh 1rem !important;
     }
@@ -19,13 +19,18 @@
     }
 }
 @media(max-width:1000px) {
-    .content .para p {
-        margin-left: 0rem;
-    }
     .content .para {
         flex-direction: column;
     }
     .content .para img {
         width: 50vw;
+    }
+}
+@media(max-width:621px) {
+    .content .top {
+        padding: 2rem 0; 
+     }
+     .content .top .txt {
+        padding: 0 1rem 0 2rem;
     }
 }

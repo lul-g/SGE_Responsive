@@ -256,10 +256,6 @@ header .header-logo{
     transition: all .2s ease-in-out;
     margin-top: .5rem;
 }
-
-
-header .header-logo:hover {
-}
 header nav .nav li{
     display: inline !important;
     transition: transform .2s ease-in-out;
