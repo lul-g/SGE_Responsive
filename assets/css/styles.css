@@ -217,16 +217,17 @@ ul li {
     inset: auto -10vh 5vh auto;
     z-index: 9999;
     transition: all .8s ease;
-    background-color: transparent;
+    background-color: #20eb92;
+    border-radius: 100%;
     border: none;
+    padding: .25rem .5rem;
+    /* width: 1rem;
+    height: 1rem; */
 }
 .to-top-btn i {
-    font-size: 40px;
+    font-size: 35px;
     cursor: pointer;
-    color: #20eb92;
-    background: #06052f;
-    border-radius: 100%;
-    background-size: cover;
+    color: #06052f;
     border: none;
 }
 .nav[data-x="true"] {
