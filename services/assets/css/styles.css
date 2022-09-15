@@ -3,6 +3,8 @@
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@300;400&display=swap');
 
+
+
 /* css-reset */
 * {
     margin: 0;
@@ -172,6 +174,10 @@ p {
     position: relative;
     top: 6em;
     z-index: 8;
+    filter: blur(5px);
+    animation: loader-blur 1s linear .4s;
+    animation-fill-mode: forwards;
+    opacity: 0
 }
 .flex {
     display: flex;
@@ -191,6 +197,49 @@ ul li {
 /* common css end */
 
 
+/* loader */
+.load {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.left,.right {
+    opacity: 1;
+    background-color: #06052f;
+    height: 805%;
+    position: absolute;
+    z-index: 10;
+    animation: loader 1s ease-out;
+}
+.right {
+    inset: auto 0 auto auto;
+}
+@keyframes loader{
+    0% {
+        width: 50%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+@keyframes loader-blur{
+    0% {
+        filter: blur(5px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes loader-header{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
 /* bg overlay start*/
 .bg {
     position: fixed;
@@ -230,6 +279,10 @@ ul li {
 .nav[data-x="true"] {
     transform: translateX(0%);
 }
+
+.not-header {
+
+}
 /* to top button end */
 /* header start*/
 header {
@@ -242,6 +295,10 @@ header {
     height: 15vh;  
     transition: ease-in .2s;
     background-color: transparent;
+
+    transform: scale(0);
+    animation: loader-header 1.5s cubic-bezier(1,-0.46,.45,1.01);
+    animation-fill-mode: forwards;
 }
 header .toggle-nav, 
 header .plane {
