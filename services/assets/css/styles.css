@@ -234,10 +234,10 @@ ul li {
 }
 @keyframes loader-header{
     0% {
-        transform: translateY(-100%);
+        top: -7rem;
     }
     100% {
-        transform: translateY(0%);
+        top: 0;
     }
 }
 /* bg overlay start*/
@@ -296,7 +296,6 @@ header {
     transition: ease-in .2s;
     background-color: transparent;
 
-    transform: scale(0);
     animation: loader-header 1.5s cubic-bezier(1,-0.46,.45,1.01);
     animation-fill-mode: forwards;
 }
