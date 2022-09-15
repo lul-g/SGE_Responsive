@@ -222,7 +222,9 @@
         margin: 0 0 20vw 0;
     }
     .products {
+        background-size: 150%;
         background-attachment: scroll;
+        /* background-position: 0 5rem; */
     }
 }
 @media (min-width: 620px){

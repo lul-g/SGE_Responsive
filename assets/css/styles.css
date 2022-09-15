@@ -224,9 +224,10 @@ ul li {
     font-size: 40px;
     cursor: pointer;
     color: #20eb92;
-    background-color: #06052f;
+    background: #06052f;
     border-radius: 100%;
-    box-shadow: 0 0 10px 5px#06052f;
+    background-size: cover;
+    border: none;
 }
 .nav[data-x="true"] {
     transform: translateX(0%);
