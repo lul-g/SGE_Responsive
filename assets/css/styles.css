@@ -294,7 +294,6 @@ header {
     background-color: transparent;
     
     animation: loader-header 1.5s cubic-bezier(1,-0.46,.45,1.01);
-    animation-fill-mode: forwards;
 }
 header .toggle-nav, 
 header .plane {
